@@ -1,0 +1,9 @@
+.app-wrapper {
+    height: 100vh;
+    border: 1px solid red;
+    margin: 0 18%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+
+}
