@@ -1,3 +1,36 @@
 .navigation-wrapper {
-    border: 1px solid yellow;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-between ;
+    
+    background: #e6e6e6;
+    border-top: 2px solid #878787;
+}
+.navigation-wrapper ul {
+    
+    padding: 0px 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    list-style: none;
+}
+.navigation-wrapper .left-part-navigation {
+    width:  78%;
+}
+
+.navigation-wrapper .right-part-navigation {
+    width: 18%;
+    position: relative;
+    left: 12px;
+}
+
+.navigation-wrapper a {
+    
+    font-size: 16px;
+    font-weight: lighter;
+    color: black;
+}
+
+.navigation-wrapper a:hover {
+    color: rgb(179, 176, 176);
 }

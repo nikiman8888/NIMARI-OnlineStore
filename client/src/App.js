@@ -18,7 +18,7 @@ function App() {
           <Route path="/dress" component={Home} />
           <Route path="/pants" component={Home} />
         </Switch>
-        <Footer />
+        <Footer/>
       </div>
     </Router>
   );
