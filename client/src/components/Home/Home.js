@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.css';
-import image from '../../images/store2.jpeg'
+import image from '../../images/store-home.png';
 function Home (){
     return (
         <div className = 'home-wrapper'>
