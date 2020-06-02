@@ -1,0 +1,16 @@
+.dropdown-wrapper {
+  position: absolute;
+  background-color: #e6e6e6;
+  height: auto;
+  width: 100%;
+  left: 0;
+  top: 50px;
+  height: 300px;
+  
+}
+.shoes-content {
+    width: 100%;
+}
+.shoes-content ul {
+    padding:0;
+}

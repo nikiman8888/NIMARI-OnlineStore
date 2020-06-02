@@ -7,6 +7,9 @@ function Home (){
            <div className = 'image-wrapper'>
                <img src = {image}/>
            </div>
+           <div className = 'image-wrapper'>
+               <img src = {image}/>
+           </div>
            
         </div>
     )
