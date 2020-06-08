@@ -1,13 +1,13 @@
 import React, { Component } from "react";
-import "./DropdownPants.css";
+import "./DropdownKinkaleri.css";
 import { Link } from "react-router-dom";
-import pantsFoto from "../../images/pants2.png";
+import pantsFoto from "../../images/materials1.jpg";
 
-class DropdownPants extends Component {
+class DropdownKinkaleri extends Component {
   render() {
     return (
       <div className="dropdown-wrapper">
-        <h1>Pants</h1>
+        <h1 className ="kinkaleri-h1">Кинкалерия</h1>
         <div className="content-img-wrapper">
           <div className="first section">
             <h3>Sport Pants</h3>
@@ -73,4 +73,4 @@ class DropdownPants extends Component {
   }
 }
 
-export default DropdownPants;
+export default DropdownKinkaleri;

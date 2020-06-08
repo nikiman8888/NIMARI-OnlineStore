@@ -1,5 +1,5 @@
 const holder = () =>{
-    return ['dropdownShoes','dropdownPants','dropdownClothes','dropdownDresses','dropdownMaterials','dropdownServices'];
+    return ['dropdownAccesories','dropdownKinkaleri','dropdownClothes','dropdownDresses','dropdownMaterials','dropdownServices'];
 }
 
 export default holder;

@@ -10,7 +10,7 @@ function Logo (){
                 <img src = {flower}/>
             </div>
             <div className ='center-part'>
-                <span className = 'first-part-logo'>Boutique</span>
+                <span className = 'first-part-logo'>Шивашко ателие</span>
                 <h1>NIMARI</h1>
             </div>
             <div className ='right-part'>

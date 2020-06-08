@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import "./DropdownShoes.css";
+import "./DropdownAccesories.css";
 import { Link } from "react-router-dom";
-import shoesFoto from "../../images/shoes1.png";
+import shoesFoto from "../../images/accesories1.png";
 class DropdownShoes extends Component {
   render() {
     return (
       <div className="dropdown-wrapper">
-        <h1>Shoes</h1>
+        <h1>Аксесоари</h1>
         <div className="content-img-wrapper">
           <div className="first section">
             <h3>Sport Shoes</h3>

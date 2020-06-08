@@ -1,5 +1,5 @@
 .app-wrapper {
-    height:auto;
+
     display: flex;
     flex-flow: column;
     justify-content: space-between;
