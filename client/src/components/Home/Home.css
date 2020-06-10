@@ -28,7 +28,8 @@
     width: 560px;
     height: 450px;
     padding:10px;
-    border: 5px solid black;
+    border: 10px outset #fe634f;
+
 }
 .home-slider-wrapper {
     width: 80%;

@@ -43,8 +43,8 @@ class Navigation extends Component {
                 НАЧАЛО
               </Link>
             </li>
-            <li onMouseOver={this.onHoverHandler}>
-              <Link to="/dress" className="dropdownServices">
+            <li onMouseOver={this.onHoverHandler} onClick = {this.onClickHandler}>
+              <Link to="/services" className="dropdownServices">
                 ШИВАШКИ УСЛУГИ
               </Link>
               {dropdownServices && (

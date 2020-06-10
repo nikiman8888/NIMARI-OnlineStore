@@ -6,7 +6,7 @@ import Navigation from "./components/Navigation/Navigation";
 import Home from "./components/Home/Home";
 import Footer from "./components/Footer/Footer";
 import Contacts from "./components/Contacts/Contacts";
-
+import ServicesContainer from './components/ServicesContainer/ServicesContainer';
 class App extends Component {
   constructor(props) {
     super(props);
@@ -49,6 +49,7 @@ class App extends Component {
             <Route path="/dress" component={Home} />
             <Route path="/pants" component={Home} />
             <Route path="/contacts" render={(props) => <Contacts {...props} closeNav={this.openedNavChecker} />}/>
+            <Route path="/services" render={(props) => <ServicesContainer {...props} closeNav={this.openedNavChecker} />}/>
           </Switch>
           <Footer />
         </div>

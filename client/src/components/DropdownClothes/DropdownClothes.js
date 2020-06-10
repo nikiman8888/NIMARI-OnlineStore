@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./DropdownClothes.css";
 import { Link } from "react-router-dom";
-import shoesFoto from "../../images/clothes2.png";
+import shoesFoto from "../../images/clothes1.jpg";
 
 class DropdownDresses extends Component {
   render() {

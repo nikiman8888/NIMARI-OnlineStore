@@ -45,7 +45,7 @@
     padding: 3px;
     margin-bottom: 5px;
     margin-left: -10px;
-    border: 1px solid black;
+    border: 4px inset silver;
     border-radius: 200px;
     height: 372px;
     object-fit: cover;

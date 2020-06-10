@@ -1,0 +1,37 @@
+.services-wrapper {
+    height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.services-wrapper .services-content-wrapper {
+   
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.services-wrapper .services-img-wrapper {
+    
+    width: 40%;
+    margin-right: 37px;
+}
+.services-content-wrapper ul {
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.services-content-wrapper ul li {
+    margin: 15px;
+}
+
+.services-img-wrapper img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-top: 20px;
+    padding: 5px;
+    border: 1px solid red;
+}
