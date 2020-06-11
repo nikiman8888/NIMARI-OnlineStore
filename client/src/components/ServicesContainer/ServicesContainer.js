@@ -9,7 +9,7 @@ class ServicesContainer extends Component {
     return (
       <div className="services-wrapper" onMouseOver={this.props.closeNav}>
         <div className="services-content-wrapper">
-          <h2>Uslugi</h2>
+          <h2>ШИВАШКИ УСЛУГИ</h2>
           <ul>
             <li>Usluga 1</li>
             <li>Usluga 2</li>

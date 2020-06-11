@@ -51,29 +51,20 @@ class Navigation extends Component {
                 <DropdownServices onClickHandler={this.props.closeNav} />
               )}
             </li>
-            <li onMouseOver={this.onHoverHandler}>
+            <li onMouseMove={this.props.closeNav}  onClick = {this.onClickHandler}>
               <Link to="/clothes" className="dropdownClothes">
                 ДРЕХИ
               </Link>
-              {dropdownClothes && (
-                <DropdownClothes onClickHandler={this.props.closeNav} />
-              )}
             </li>
-            <li onMouseOver={this.onHoverHandler}>
+            <li onMouseMove={this.props.closeNav} >
               <Link to="/accesories" className="dropdownAccesories">
               АКСЕСОАРИ
               </Link>
-              {dropdownAccesories && (
-                <DropdownAccesories onClickHandler={this.props.closeNav} />
-              )}
-            </li>
-            <li onMouseOver={this.onHoverHandler}>
-              <Link to="/pants" className="dropdownKinkaleri">
+          </li>
+            <li onMouseMove={this.props.closeNav} >
+            <a href= "https://www.google.com/" >
               КИНКАЛЕРИЯ
-              </Link>
-              {dropdownKinkaleri&& (
-                <DropdownKinkaleri onClickHandler={this.props.closeNav} />
-              )}
+              </a>
             </li>
           </ul>
         </div>

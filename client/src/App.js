@@ -6,7 +6,10 @@ import Navigation from "./components/Navigation/Navigation";
 import Home from "./components/Home/Home";
 import Footer from "./components/Footer/Footer";
 import Contacts from "./components/Contacts/Contacts";
-import ServicesContainer from './components/ServicesContainer/ServicesContainer';
+import ServicesContainer from "./components/ServicesContainer/ServicesContainer";
+import ClothesContainer from "./components/ClothesContainer/ClothesContainer";
+import AccesoriesContainer from "./components/AccesoriesContainer/AccesoriesContainer";
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -31,25 +34,59 @@ class App extends Component {
       }
     }
   };
-  updateStateFunc = (updated) =>{
-    console.log(updated)
-    this.setState({[updated]:true})
-  }
-  
+  updateStateFunc = (updated) => {
+    console.log(updated);
+    this.setState({ [updated]: true });
+  };
 
   render() {
     return (
       <Router>
         <div className="app-wrapper">
-          <Navigation closeNav={this.openedNavChecker} state={this.state} updateState = {this.updateStateFunc} />
+          <Navigation
+            closeNav={this.openedNavChecker}
+            state={this.state}
+            updateState={this.updateStateFunc}
+          />
           <Logo />
           <Switch>
-            <Route path="/" exact render={(props) => <Home {...props} closeNav={this.openedNavChecker} />} />
-            <Route path="/shoes" component={Home} />
-            <Route path="/dress" component={Home} />
-            <Route path="/pants" component={Home} />
-            <Route path="/contacts" render={(props) => <Contacts {...props} closeNav={this.openedNavChecker} />}/>
-            <Route path="/services" render={(props) => <ServicesContainer {...props} closeNav={this.openedNavChecker} />}/>
+            <Route
+              path="/"
+              exact
+              render={(props) => (
+                <Home {...props} closeNav={this.openedNavChecker} />
+              )}
+            />
+            <Route
+              path="/contacts"
+              render={(props) => (
+                <Contacts {...props} closeNav={this.openedNavChecker} />
+              )}
+            />
+            <Route
+              path="/services"
+              render={(props) => (
+                <ServicesContainer
+                  {...props}
+                  closeNav={this.openedNavChecker}
+                />
+              )}
+            />
+            <Route
+              path="/clothes"
+              render={(props) => (
+                <ClothesContainer {...props} closeNav={this.openedNavChecker} />
+              )}
+            />
+            <Route
+              path="/accesories"
+              render={(props) => (
+                <AccesoriesContainer
+                  {...props}
+                  closeNav={this.openedNavChecker}
+                />
+              )}
+            />
           </Switch>
           <Footer />
         </div>
