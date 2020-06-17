@@ -6,71 +6,103 @@ import DropdownKinkaleri from "../DropdownKinkaleri/DropdownKinkaleri";
 import DropdownClothes from "../DropdownClothes/DropdownClothes";
 import DropdownServices from "../DropdownServices/DrDropdownServices";
 import nameChecker from "../../utils/clasnameHolder";
+import anime from "animejs";
 
 class Navigation extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      isOpen: false,
+      disabled: false,
+    };
   }
+  onDisabledHandler = (event) => {
+    setTimeout(() =>{
+      this.setState({disabled:false})
+    },350);
+}
 
-  onClickHandler = () => {
-    this.props.closeNav(); //we call the props function(from App component) to close opened dropdown
+  onClick = (e) => {
+    
+    if (this.state.disabled) {
+      return;
+  }
+    this.setState({disabled: true});  
+    this.onDisabledHandler(); 
+    this.setState({ isOpen: !this.state.isOpen })
+  
+    if (this.state.isOpen) {
+      
+      this.offClick();
+      return;
+    }
+   
+    anime({
+      targets: ".slowdown .dropdown-wrapper",
+      opacity: ["0", "1"],
+      translateY: "485",
+      duration: "800",
+      easing: "easeInOutQuad",
+    });
+    
+
   };
 
-  onHoverHandler = (e) => {
-    const { className } = e.target;
-
-    if (nameChecker().includes(className)) {
-      //if includes we call openNavChecker to close the open Nav
-      this.props.closeNav();
-      this.props.updateState(className); //and we setState in parent func
-    }
+  offClick = () => {
+    this.setState({ isOpen: false });
+    
+    anime({
+      targets: ".slowdown .dropdown-wrapper",
+      opacity: 0,
+      translateY: "-485",
+      duration: "1000",
+      easing: "easeInOutQuad",
+    });
   };
 
   render() {
-    let {
-      dropdownAccesories,
-      dropdownKinkaleri,
-      dropdownClothes,
-      dropdownServices,
-    } = this.props.state;
-
     return (
       <div className="navigation-wrapper">
         <div className="left-part-navigation">
           <ul className="left-ul">
-            <li onMouseMove={this.props.closeNav}>
-              <Link to="/" className="home-link">
+            <li>
+              <Link to="/" className="home-link" onClick={this.offClick}>
                 НАЧАЛО
               </Link>
             </li>
-            <li onMouseOver={this.onHoverHandler} onClick = {this.onClickHandler}>
-              <Link to="/services" className="dropdownServices">
+            <li className="slowdown" onClick={this.onClick}>
+              <Link to="#" className="dropdownServices">
                 ШИВАШКИ УСЛУГИ
               </Link>
-              {dropdownServices && (
-                <DropdownServices onClickHandler={this.props.closeNav} />
-              )}
+              <DropdownServices closeNav={this.offClick} />
             </li>
-            <li onMouseMove={this.props.closeNav}  onClick = {this.onClickHandler}>
-              <Link to="/clothes" className="dropdownClothes">
+
+            <li>
+              <Link
+                to="/clothes"
+                className="dropdownClothes"
+                onClick={this.offClick}
+              >
                 ДРЕХИ
               </Link>
             </li>
-            <li onMouseMove={this.props.closeNav} >
-              <Link to="/accesories" className="dropdownAccesories">
-              АКСЕСОАРИ
+            <li>
+              <Link
+                to="/accesories"
+                className="dropdownAccesories"
+                onClick={this.offClick}
+              >
+                АКСЕСОАРИ
               </Link>
-          </li>
-            <li onMouseMove={this.props.closeNav} >
-            <a href= "https://www.google.com/" >
-              КИНКАЛЕРИЯ
-              </a>
+            </li>
+            <li>
+              <a href="https://www.google.com/">КИНКАЛЕРИЯ</a>
             </li>
           </ul>
         </div>
         <div className="right-part-navigation">
           <ul>
-            <li onMouseMove={this.props.closeNav}>
+            <li onClick={this.offClick}>
               <Link to="/contacts">КОНТАКТИ</Link>
             </li>
           </ul>

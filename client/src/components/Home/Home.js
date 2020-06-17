@@ -3,6 +3,17 @@ import "./Home.css";
 import image from "../../images/hom2.jpg";
 
 class Home extends Component {
+
+  scrollTop()
+  {
+      window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+      });
+  }
+  componentDidMount () {
+    this.scrollTop();
+  }
   render() {
     return (
       <div className="home-wrapper" onMouseOver={this.props.closeNav}>

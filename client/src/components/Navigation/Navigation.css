@@ -7,6 +7,8 @@
     height: 60px;
     
     background: #e6e6e6;
+    transition:  height 2s ease;
+   
     
 }
 .navigation-wrapper ul {
@@ -33,7 +35,9 @@
     font-weight: lighter;
     color: black;
 }
-
 .navigation-wrapper a:hover {
-    color: rgb(179, 176, 176);
+    
+   opacity: 0.3;
+    
 }
+

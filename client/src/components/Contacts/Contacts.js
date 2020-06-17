@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./Contacts.css";
 import foto from "../../images/store1.jpg";
 class Contacts extends Component {
+  
   render() {
     return (
       <div className="contacts-wrapper" onMouseOver = {this.props.closeNav}>
@@ -19,7 +20,7 @@ class Contacts extends Component {
             <li>Email: supe@muper.com</li>
           </ul>
           <div>
-            <img src={foto} />
+            <img src={foto} alt = "adress"/>
           </div>
         </div>
       </div>

@@ -7,18 +7,14 @@
 }
 .services-wrapper .services-content-wrapper {
    
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-flow: column;
     align-items: center;
 }
-.services-wrapper .services-img-wrapper {
-    
-    width: 40%;
-    margin-right: 37px;
-}
+
 .services-content-wrapper ul {
-    list-style: none;
+    
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -26,12 +22,18 @@
 .services-content-wrapper ul li {
     margin: 15px;
 }
-
-.services-img-wrapper img {
+.services-category-wrapper {
     width: 100%;
-    height: 300px;
-    object-fit: cover;
-    margin-top: 20px;
-    padding: 5px;
-    border: 1px solid red;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
+.services-category-wrapper .category-wrapper {
+    border: 1px solid black;
+    width: 45%;
+    margin-bottom: 30px;
+}
+.category-wrapper h3 {
+    margin-left: 10px;
+}
+
