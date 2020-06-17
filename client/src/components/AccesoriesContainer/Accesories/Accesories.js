@@ -3,7 +3,7 @@ import './Accesories.css';
 
 const Accesories = (props) => {
     const name = props.name;
-    const path = `https://nikiman8888.github.io/nimarionline/public/images/accesories/${name}.png`;
+    const path = `images/accesories/${name}.png`;
    
   return (
     <div className="accesories-single">
