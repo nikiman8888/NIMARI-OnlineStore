@@ -8,6 +8,7 @@ import Footer from "./components/Footer/Footer";
 import Contacts from "./components/Contacts/Contacts";
 import ClothesContainer from "./components/ClothesContainer/ClothesContainer";
 import AccesoriesContainer from "./components/AccesoriesContainer/AccesoriesContainer";
+import './responsive1024.css';
 
 class App extends Component {
   constructor(props) {

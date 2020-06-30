@@ -1,9 +1,8 @@
-@import url("https://mdn.mozillademos.org/files/6017/border-image-6.svg");
+
 
 .slider-img-container img {
   width: 100%;
-  height:100%;
-  object-fit: cover;
-  overflow: hidden;
+  height: 100%;
+ 
  
 }

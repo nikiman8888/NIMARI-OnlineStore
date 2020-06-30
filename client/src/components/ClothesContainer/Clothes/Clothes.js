@@ -8,8 +8,7 @@ const Clothes = (props) => {
   return (
     <div className="clothes-single">
       <img src = {path} />
-      <div>{name}</div>
-      
+           
     </div>
   );
 };

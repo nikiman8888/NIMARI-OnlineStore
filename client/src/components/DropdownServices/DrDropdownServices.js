@@ -42,7 +42,7 @@ class DropdownServices extends Component {
           <img src={servicesFoto} />
         </div>
 
-        <button type="button" onClick={this.props.closeNav}>
+        <button className = "close-button" type="button" onClick={this.props.closeNav}>
           ЗАТВОРИ
         </button>
       </div>

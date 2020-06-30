@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./Home.css";
 import image from "../../images/hom2.jpg";
 import Slider from "../Slider/Slider";
-
+import SliderContainer from '../SliderContainer/SliderContainer';
 class Home extends Component {
   scrollTop() {
     window.scrollTo({
@@ -61,14 +61,8 @@ class Home extends Component {
             <img src={image} />
           </div>
         </div>
-        <div className="down-part-home">
-          <div className="main-framework">
-            <h1>Latest Models</h1>
-            <div className="slider-framework">
-              <Slider />
-            </div>
-          </div>
-        </div>
+        
+        <SliderContainer/>
       </div>
     );
   }

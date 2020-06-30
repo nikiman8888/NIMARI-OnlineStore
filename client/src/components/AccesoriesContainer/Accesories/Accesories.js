@@ -8,8 +8,7 @@ const Accesories = (props) => {
   return (
     <div className="accesories-single">
       <img src = {path} />
-      <div>{name}</div>
-      
+
     </div>
   );
 };

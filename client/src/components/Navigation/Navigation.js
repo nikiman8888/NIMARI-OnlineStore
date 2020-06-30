@@ -17,26 +17,24 @@ class Navigation extends Component {
     };
   }
   onDisabledHandler = (event) => {
-    setTimeout(() =>{
-      this.setState({disabled:false})
-    },350);
-}
+    setTimeout(() => {
+      this.setState({ disabled: false });
+    }, 350);
+  };
 
   onClick = (e) => {
-    
     if (this.state.disabled) {
       return;
-  }
-    this.setState({disabled: true});  
-    this.onDisabledHandler(); 
-    this.setState({ isOpen: !this.state.isOpen })
-  
+    }
+    this.setState({ disabled: true });
+    this.onDisabledHandler();
+    this.setState({ isOpen: !this.state.isOpen });
+
     if (this.state.isOpen) {
-      
       this.offClick();
       return;
     }
-   
+
     anime({
       targets: ".slowdown .dropdown-wrapper",
       opacity: ["0", "1"],
@@ -44,13 +42,11 @@ class Navigation extends Component {
       duration: "800",
       easing: "easeInOutQuad",
     });
-    
-
   };
 
   offClick = () => {
     this.setState({ isOpen: false });
-    
+
     anime({
       targets: ".slowdown .dropdown-wrapper",
       opacity: 0,
@@ -106,6 +102,11 @@ class Navigation extends Component {
               <Link to="/contacts">КОНТАКТИ</Link>
             </li>
           </ul>
+        </div>
+        <div className="drop-lines-responsive">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
     );
