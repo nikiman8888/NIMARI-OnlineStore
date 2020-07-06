@@ -3,25 +3,31 @@ import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import "./App.css";
 import Logo from "./components/Logo/Logo";
 import Navigation from "./components/Navigation/Navigation";
+import NavMobile from "./components/NavMobile/NavMobile";
 import Home from "./components/Home/Home";
 import Footer from "./components/Footer/Footer";
 import Contacts from "./components/Contacts/Contacts";
 import ClothesContainer from "./components/ClothesContainer/ClothesContainer";
 import AccesoriesContainer from "./components/AccesoriesContainer/AccesoriesContainer";
-import './responsive1024.css';
+import "./responsive1024.css";
 
 class App extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      navMobile: false,
+    };
   }
-
+ 
   render() {
+    const { navMobile } = this.state;
+
     return (
       <Router>
         <div className="app-wrapper">
           <Logo />
-          <Navigation />
-
+          <Navigation clickMobileNav={this.onClickLines} />
+          
           <Switch>
             <Route path="/" exact render={(props) => <Home {...props} />} />
             <Route

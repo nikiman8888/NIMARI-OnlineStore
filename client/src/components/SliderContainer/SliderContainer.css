@@ -50,7 +50,7 @@
   position: absolute;
   z-index: 1;
   left: 5%;
-  min-width: 7%;
+  width: 7%;
   min-height: 411px;
   outline: none;
 }

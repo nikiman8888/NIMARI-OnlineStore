@@ -3,6 +3,7 @@ import "./Home.css";
 import image from "../../images/hom2.jpg";
 import Slider from "../Slider/Slider";
 import SliderContainer from '../SliderContainer/SliderContainer';
+import SliderMobile from "../SliderMobile.js/SliderMobile";
 class Home extends Component {
   scrollTop() {
     window.scrollTo({
@@ -63,6 +64,7 @@ class Home extends Component {
         </div>
         
         <SliderContainer/>
+        <SliderMobile/>
       </div>
     );
   }

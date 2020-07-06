@@ -53,13 +53,13 @@ function SliderContainer() {
     <div className="new-slider-container">
       <h1>Hoви Продукти</h1>
       <div className="new-slider-wrapper">
+      
+        <div className="new-slider">
         <button className="left-direction" onClick={goLeft}>
           <i className="fas fa-chevron-circle-left"></i>
         </button>
-        <div className="new-slider">
           {arr.map((item, index) => {
-            console.log(index);
-
+           
             return (
               <div
                 key={index}
@@ -70,10 +70,11 @@ function SliderContainer() {
               </div>
             );
           })}
-        </div>
-        <button className="right-direction" onClick={goRight}>
+          <button className="right-direction" onClick={goRight}>
           <i className="fas fa-chevron-circle-right"></i>
         </button>
+        </div>
+        
       </div>
       <p>
         {counter} / {arr.length}
