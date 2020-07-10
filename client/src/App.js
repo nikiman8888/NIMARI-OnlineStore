@@ -12,7 +12,7 @@ import AccesoriesContainer from "./components/AccesoriesContainer/AccesoriesCont
 
 
 import './responsive1024.css';
-import './responsive812.css';
+import './responsive823.css';
 import './responsive600.css';
 import './responsive414.css';
 
