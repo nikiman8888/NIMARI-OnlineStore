@@ -9,7 +9,13 @@ import Footer from "./components/Footer/Footer";
 import Contacts from "./components/Contacts/Contacts";
 import ClothesContainer from "./components/ClothesContainer/ClothesContainer";
 import AccesoriesContainer from "./components/AccesoriesContainer/AccesoriesContainer";
-import "./responsive1024.css";
+
+
+import './responsive1024.css';
+import './responsive812.css';
+import './responsive600.css';
+import './responsive414.css';
+
 
 class App extends Component {
   constructor(props) {
@@ -40,7 +46,7 @@ class App extends Component {
               render={(props) => <AccesoriesContainer {...props} />}
             />
           </Switch>
-          <Footer />
+          <Footer/>
         </div>
       </Router>
     );

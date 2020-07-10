@@ -1,4 +1,5 @@
 @media all and (max-width: 1024px) {
+  
   .upper-part-home {
     margin-bottom: 30px;
     width: 100%;
@@ -7,7 +8,7 @@
     height: 63px;
   }
   .navigation-wrapper a {
-    font-size: 20px;
+    font-size: 18px;
   }
   .navigation-wrapper .right-part-navigation {
     position: unset;
@@ -104,9 +105,6 @@
     color: black;
     font-size: xxx-large;
   }
-  .footer-wrapper {
-    height: 50px;
-  }
   .clothes-single,
   .accesories-single {
     width: 35%;
@@ -118,84 +116,14 @@
     height: 100%;
     object-fit: cover;
   }
+  .contacts-wrapper {
+    flex-flow: column;
+    align-items: center;
+    min-height: 80vh;
+  }
+  
+  .img-container{
+    width: 90%;
+  }
 }
 
-@media all and (max-width: 768px) {
-  .navigation-wrapper li a {
-    font-size: 18px;
-  }
-  .nav-mobile a {
-    font-size: 20px;
-  }
-  .left-part-navigation,
-  .right-part-navigation {
-    display: none;
-  }
-  .dropdown-wrapper {
-    top: -465px;
-  }
-  .drop-lines-responsive {
-    display: block;
-  }
-  .new-slider-container button.right-direction {
-    right: 8%;
-  }
-  .new-slider-container button.left-direction {
-    left: 8%;
-  }
-  .dropdown-wrapper img {
-    width: 40%;
-    height: 71%;
-    margin-top: 64px;
-  }
-  .dropdown-wrapper h1 {
-    left: 35%;
-  }
-  .content-img-wrapper hr {
-    width: 82%;
-  }
-  .content-img-wrapper .section {
-    margin-top: 38px;
-  }
-  .nav-mobile ul li {
-    margin: 0;
-  }
-  .dropdown-wrapper .close-button {
-    font-size: 16px;
-    bottom: 16px;
-  }
-}
-@media all and (max-width: 600px) {
-  .home-image-wrapper {
-    width: 90%;
-    text-align: center;
-  }
-  .home-image-wrapper img {
-    width: 75%;
-    height: 75%;
-  }
-  .new-slider-container {
-    width: 72%;
-    height: 75%;
-  }
-  .new-slider-container .left-direction,
-  .new-slider-container .right-direction {
-    min-height: 45%;
-  }
-  .logo-wrapper {
-    height: auto;
-    flex-flow: row;
-  }
-  .logo-wrapper img {
-    width: 60px;
-    height: 60px;
-  }
-  .logo-wrapper .center-part {
-    font-size: 16px;
-    margin-top: 11px;
-    margin-left: -44px;
-  }
-  .logo-wrapper h1 {
-    top: 9px;
-  }
-}

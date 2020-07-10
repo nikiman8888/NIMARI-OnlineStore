@@ -18,12 +18,7 @@ function SliderMobile() {
         spaceBetween={10}
         slidesPerView={1}
         effect="cube"
-        cubeEffect={{
-          shadow: true,
-          slideShadows: true,
-          shadowOffset: 20,
-          shadowScale: 0.94,
-        }}
+    
         pagination={{ clickable: true }}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
