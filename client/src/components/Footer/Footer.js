@@ -11,7 +11,7 @@ function Footer (){
               <li><Link to= '/'>НАЧАЛО</Link></li>
               <li><Link to = '/clothes'>ДРЕХИ</Link></li>
               <li><Link to = 'accesories'>АКСЕСОАРИ</Link></li>
-              <li><Link to = 'www.google.com'>КИНКАЛЕРИЯ</Link></li>
+              <li><a href = 'https://www.google.com'>КИНКАЛЕРИЯ</a></li>
               <li><Link to = '/contacts'>КОНТАКТИ</Link></li>
           </ul>
             
