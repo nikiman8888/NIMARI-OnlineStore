@@ -9,17 +9,22 @@ class Navigation extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      navMobile:false,
+    
       isOpen: false,
       disabled: false,
-      navMobile:this.props.navMobileState
+      navMobile:this.props.navMobileState,
+      
     };
   }
+  
   onClickLines = (e) => {
+   
     console.log(e.target.className)
     if(e.target.className !== 'services-dropdown' && !e.target.classList.contains('mobile') ){ // we do this to prevent closing of dropdown when user click services
       this.setState({ navMobile: !this.state.navMobile });
     }
+
+    
     
   };
   onDisabledHandler = (event) => {
@@ -61,11 +66,48 @@ class Navigation extends Component {
       easing: "easeInOutQuad",
     });
   };
+  
 
   render() {
-    const {navMobile} = this.state;
+    const {navMobile,isOpen} = this.state;
+   if(navMobile){
+    anime({
+      targets:".span-lines-one",
+      translateY:10,
+      rotate:"45deg",
+      duration:"2000"
+    })
+    anime({
+      targets:".span-lines-two",
+      opacity:0,
+      duration:1000
+    })
+    anime({
+      targets:".span-lines-three",
+      translateY:-11,
+      rotate:"-45deg",
+      duration:"2000"
+    })
+   }else {
+    anime({
+      targets:".span-lines-one",
+      translateY:0,
+      rotate:"0deg",
+      duration:"2000"
+    })
+    anime({
+      targets:".span-lines-two",
+      opacity:1,
+      duration:1000
+    })
+    anime({
+      targets:".span-lines-three",
+      translateY:0,
+      rotate:"0deg",
+      duration:"2000"
+    })
+   }
    
-    
     return (
       <div className="navigation-wrapper">
         <div className="left-part-navigation">
@@ -113,9 +155,9 @@ class Navigation extends Component {
           </ul>
         </div>
         <div className="drop-lines-responsive" onClick = {this.onClickLines} > 
-          <span></span>
-          <span></span>
-          <span></span>
+          <span className = "span-lines-one"></span>
+          <span className = "span-lines-two"></span>
+          <span className = "span-lines-three"></span>
           {navMobile && <NavMobile closeNav = {this.onClickLines} />}
         </div>
       </div>
