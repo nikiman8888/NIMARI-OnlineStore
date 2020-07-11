@@ -20,20 +20,19 @@ function SliderMobile() {
         effect="cube"
     
         pagination={{ clickable: true }}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
+        
       >
         <SwiperSlide>
-          <ImgComp src={i1} />
+          <ImgComp src={i1} alt = {'dress'}/>
         </SwiperSlide>
         <SwiperSlide>
-          <ImgComp src={i1} />
+          <ImgComp src={i1} alt = {'dress'}/>
         </SwiperSlide>
         <SwiperSlide>
-          <ImgComp src={i1} />
+          <ImgComp src={i1} alt = {'dress'}/>
         </SwiperSlide>
         <SwiperSlide>
-          <ImgComp src={i1} />
+          <ImgComp src={i1} alt = {'dress'}/>
         </SwiperSlide>
       </Swiper>
     </div>

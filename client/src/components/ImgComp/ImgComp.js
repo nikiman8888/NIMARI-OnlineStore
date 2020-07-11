@@ -1,11 +1,10 @@
-import React, { Component } from 'react'
-import './ImgComp.css';
+import React from 'react'
 
-function ImgComp ({src}) {
+function ImgComp ({src,alt}) {
    
     return (
         <div className= {`img-wrapper center`} >
-              <img src={src} />
+              <img src={src} alt = {alt}/>
             </div>
     )
 

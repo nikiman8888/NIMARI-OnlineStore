@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./DropdownServices.css";
-import { Link } from "react-router-dom";
 import servicesFoto from "../../images/services1.png";
 
 class DropdownServices extends Component {
@@ -37,7 +36,7 @@ class DropdownServices extends Component {
             </ul>
           </div>
 
-          <img src={servicesFoto} className = "mobile"/>
+          <img src={servicesFoto} className = "mobile" alt = "sewing-services"/>
         </div>
 
         <button className = "close-button mobile" type="button" onClick={this.props.closeNav}>

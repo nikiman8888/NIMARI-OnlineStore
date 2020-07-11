@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import "./Navigation.css";
 import { Link } from "react-router-dom";
 import DropdownServices from "../DropdownServices/DrDropdownServices";
-import nameChecker from "../../utils/clasnameHolder";
 import anime from "animejs";
 import NavMobile from '../NavMobile/NavMobile';
+
 class Navigation extends Component {
   constructor(props) {
     super(props);
@@ -69,7 +69,7 @@ class Navigation extends Component {
   
 
   render() {
-    const {navMobile,isOpen} = this.state;
+    const {navMobile} = this.state;
    if(navMobile){
     anime({
       targets:".span-lines-one",

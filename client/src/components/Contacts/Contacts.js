@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Contacts.css";
-import foto from "../../images/store1.jpg";
+
 class Contacts extends Component {
   render() {
     return (

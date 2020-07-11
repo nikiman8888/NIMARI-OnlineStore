@@ -52,10 +52,8 @@ class NavMobile extends Component {
  
 
   render() {
-    const { closeNav} = this.props;
-    const{isOpen} = this.state;
-   
-
+    //const { closeNav} = this.props;
+    //const{isOpen} = this.state;
     return (
       <div className="nav-mobile">
         <DropdownServices closeNav = {this.offClickDrop}/>

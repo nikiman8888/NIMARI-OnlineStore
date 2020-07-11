@@ -34,7 +34,7 @@ class Logo extends Component {
     return (
       <div className="logo-wrapper">
         <div className="left-part">
-          <img src={flower} />
+          <img src={flower} alt = "logo" />
         </div>
         <div className="center-part">
           <div className = "center-part-wrapper">
@@ -61,7 +61,7 @@ class Logo extends Component {
           
         </div>
         <div className="right-part">
-          <img src={shevron} />
+          <img src={shevron} alt = "logo"/>
         </div>
       </div>
     );

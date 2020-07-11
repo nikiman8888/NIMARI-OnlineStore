@@ -7,7 +7,7 @@ const Clothes = (props) => {
    
   return (
     <div className="clothes-single">
-      <img src = {path} />
+      <img src = {path} alt = "clothes"/>
            
     </div>
   );

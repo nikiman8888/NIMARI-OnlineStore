@@ -1,14 +1,11 @@
 import React, { useState, useEffect } from "react";
 import "./SliderContainer.css";
 import i1 from "../../images/slider1.jpg";
-import i2 from "../../images/slider2.jpg";
-import i3 from "../../images/slider3.jpg";
 import ImgComp from "../ImgComp/ImgComp";
 import anime from "animejs";
 
 function SliderContainer() {
-  // the start index of the centered photo ,by this index we scale the centered foto
-  let [pages, updatePages] = useState(1);
+  
   let [counter, updateCounter] = useState(1);
   let [x, setX] = useState(0);
   //let arr1 = new Array(arr.length);

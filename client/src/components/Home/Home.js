@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import "./Home.css";
 import image from "../../images/hom2.jpg";
-import Slider from "../Slider/Slider";
 import SliderContainer from '../SliderContainer/SliderContainer';
 import SliderMobile from "../SliderMobile.js/SliderMobile";
+
 class Home extends Component {
   scrollTop() {
     window.scrollTo({
@@ -59,7 +59,7 @@ class Home extends Component {
           </div>
 
           <div className="home-image-wrapper">
-            <img src={image} />
+            <img src={image} alt = "nimari-foto"/>
           </div>
         </div>
         

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Slider.css";
-import Img from "../ImgComponent/ImgComponent";
+import Img from "../ImgComp/ImgComp";
 import i1 from "../../images/slider1.jpg";
 import i2 from "../../images/slider2.jpg";
 import i3 from "../../images/slider3.jpg";
